@@ -14,6 +14,7 @@ h1 {
 }
 
 .menu-title {
+	position: relative;
 	width: 70%;
 	border: solid black;
 	text-align: center;
@@ -36,14 +37,17 @@ h1 {
 
 #menu1 {
 	background: pink;
+	left: 30%;
 }
 
 #menu2 {
 	background: red;
+	left: 30%;
 }
 
 #menu3 {
 	background: yellow;
+	left: 30%;
 }
 
 p {
