@@ -4,8 +4,9 @@
 	padding: 0px;
 }
 
-h1 {
+.header {
 	text-align: center;
+	margin: 20px;
 }
 
 .container {
@@ -13,26 +14,28 @@ h1 {
 	margin: 0 auto;
 }
 
+.row {
+	width: 100%;
+}
+
 .menu-title {
 	position: relative;
 	width: 70%;
 	border: solid black;
 	text-align: center;
+	margin-bottom: 5px;
 }
 
 .column {
-	width: 31%;
-	height: 150px;
-	margin: 5px;
+	width: 30%;
+	height: 200px;
 	float: left;
-	border: solid black;
-	float: left;
+	border: 1px solid black;
+	margin-left: 2.5%;
 }
 
-.row:after {
-	content: "";
-	display: table;
-	clear: both;
+#col-right {
+	margin-right: 2.5%;
 }
 
 #menu1 {
@@ -51,5 +54,7 @@ h1 {
 }
 
 p {
-	margin: 3px;
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
 }
