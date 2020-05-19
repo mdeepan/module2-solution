@@ -1,60 +1,83 @@
 * {
 	box-sizing: border-box;
-	margin: 0px;
-	padding: 0px;
 }
-
-.header {
-	text-align: center;
-	margin: 20px;
-}
-
 .container {
-	width: 100%;
-	margin: 0 auto;
+	margin: 0 10px;
 }
-
-.row {
-	width: 100%;
-}
-
-.menu-title {
-	position: relative;
-	width: 70%;
-	border: solid black;
+header {
 	text-align: center;
-	margin-bottom: 5px;
+	font-family: 'Balsamiq Sans', cursive;
+}
+.menu-tiles {
+	border: 2px solid #000000;
+}
+.row {
+}
+.menu-tiles > p {
+	padding: 10px;
+	line-height: 1.5;
+	font-family: 'Balsamiq Sans', cursive;
+	font-weight: 400;
+}
+.menu-tiles > h2 {
+	position: relative;
+	width: 40%;
+	border: 1px solid #000000;
+	text-align: center;
+	left: 60%;
+	margin: 0;
+	color: #ffffff;
+	font-family: 'Balsamiq Sans', cursive;
+}
+#sushi-menu {
+	/* margin-right: 0;
+	margin-left: 3.3333%; */
+}
+#chicken-menu > h2 {
+	background-color: #e76f51;
+}
+#beef-menu > h2 {
+	background-color: #264653;
+}
+#sushi-menu > h2 {
+	background-color: #2a9d8f;
 }
 
-.column {
+/* Large devices above 991px */
+@media (min-width: 992px) {
+	.col-lg-4 {
 	width: 30%;
-	height: 200px;
 	float: left;
-	border: 1px solid black;
-	margin-left: 2.5%;
+	}
+	#chicken-menu {
+	margin-right: 5%;
+	}
+	#beef-menu {
+	margin-right: 5%;
+	}
 }
 
-#col-right {
-	margin-right: 2.5%;
+/* Medium (Tablet) devices 768px and 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+	.col-md-6 {
+	width: 49%;
+	float: left;
+	margin-bottom: 2%;
+	}
+	#chicken-menu {
+	margin-right: 2%;
+	}
+	#sushi-menu {
+		width: 100%;
+	}
+	
 }
 
-#menu1 {
-	background: pink;
-	left: 30%;
-}
-
-#menu2 {
-	background: red;
-	left: 30%;
-}
-
-#menu3 {
-	background: yellow;
-	left: 30%;
-}
-
-p {
-	width: 90%;
-	margin-right: auto;
-	margin-left: auto;
+/* Small devices <= 767px */
+@media (max-width: 767px) {
+	.col-sm-12 {
+	width: 100%;
+	float: left;
+	margin-bottom: 2%;
+	}
 }
